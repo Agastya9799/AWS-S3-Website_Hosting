@@ -24,12 +24,12 @@ Amazon guarantees 99.999999999% (or 11 9s) durability for all S3 storage classes
 *	Access control lists & bucket policies to secure the data.
 
 ## S3 charges by:
-	storage size
-	number of requests
-	storage management pricing (known as tiers)
-	data transfer pricing (objects leaving/entering AWS via the internet)
-	transfer acceleration (an optional speed increase for moving objects via Cloudfront)
-	cross region replication (more HA than offered by default)
+*	storage size
+*	number of requests
+*	storage management pricing (known as tiers)
+*	data transfer pricing (objects leaving/entering AWS via the internet)
+*	transfer acceleration (an optional speed increase for moving objects via Cloudfront)
+*	cross region replication (more HA than offered by default)
 Bucket policies secure data at the bucket level while access control lists secure data at the more granular object level. By default, all newly created buckets are private.
 S3 can be configured to create access logs which can be shipped into another bucket in the current account or even a separate account all together. This makes it easy to monitor who accesses what inside S3.
 There are 3 different ways to share S3 buckets across AWS accounts:
