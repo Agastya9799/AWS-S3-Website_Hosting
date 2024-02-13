@@ -16,12 +16,12 @@ The data consistency model for S3 ensures immediate read access for new objects 
 The data consistency model for S3 also ensures immediate read access for PUTS and DELETES of already existing objects, since Decembre 2020.
 Amazon guarantees 99.999999999% (or 11 9s) durability for all S3 storage classes except its Reduced Redundancy Storage class.
 ## S3 comes with the following main features:
-	tiered storage and pricing variability
-	lifecycle management to expire older content.
-	versioning for version control
-	encryption for privacy
-	MFA deletes to prevent accidental or malicious removal of content.
-	Access control lists & bucket policies to secure the data.
+*	tiered storage and pricing variability
+*       lifecycle management to expire older content.
+*	versioning for version control
+*	encryption for privacy
+*	MFA deletes to prevent accidental or malicious removal of content.
+*	Access control lists & bucket policies to secure the data.
 
 ## S3 charges by:
 	storage size
