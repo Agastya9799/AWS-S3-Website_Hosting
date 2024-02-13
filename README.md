@@ -40,13 +40,13 @@ S3 is a great candidate for static website hosting. When you enable static websi
 # Amazon S3 Storage Classes:
 Amazon S3 offers a range of storage classes that you can choose from based on the performance, data access, resiliency, and cost requirements of your workloads. S3 storage classes are purpose-built to provide the lowest cost storage for different access patterns. S3 storage classes are ideal for virtually any use case, including those with demanding performance needs, data lakes, residency requirements, unknown or changing access patterns, or archival storage.
 The S3 storage classes include. 
-•	Amazon S3 Standard
-•	Amazon S3 Intelligent-Tiering
-•	Amazon S3 Standard-Infrequent Access
-•	Amazon S3 One Zone-Infrequent Access
-•	Amazon S3 Glacier Instant Retrieval
-•	Amazon S3 Glacier Flexible Retrieval
-•	Amazon S3 Glacier Deep Archive
+*	Amazon S3 Standard
+*	Amazon S3 Intelligent-Tiering
+*	Amazon S3 Standard-Infrequent Access
+*	Amazon S3 One Zone-Infrequent Access
+*	Amazon S3 Glacier Instant Retrieval
+*	Amazon S3 Glacier Flexible Retrieval
+*	Amazon S3 Glacier Deep Archive
 Amazon S3 provides the most durable storage in the cloud. Based on its unique architecture, S3 is designed to exceed 99.999999999% (11 nines) data durability. Additionally, S3 stores data redundantly across a minimum of 3 Availability Zones by default, providing built-in resilience against widespread disaster. Customers can store data in a single AZ to minimize storage cost or latency, in multiple AZs for resilience against the permanent loss of an entire data center, or in multiple AWS Regions to meet geographic resilience requirements. If you have data residency requirements that can’t be met by an existing AWS Region, you can use the S3 Outposts storage class to store your S3 data on premises.
 ## 1.S3 Standard: The Go-to for Frequently Accessed Data
 
@@ -56,19 +56,19 @@ Mainly it is used for general purposes to maintain durability, availability, and
 
 Amazon S3 standard storage class is the versatile and widely used storage class in amazon S3. The following are some of the use cases of Amazon S3 standard class.
 
-•	Hosting Static Websites.
-•	Serving Content Distribution Networks (CDNs).
-•	Storing Frequently Accessed Data.
-•	Building Data Lakes and Data Warehouses.
-•	Backing Up Data.
-•	Serving Mobile and Gaming Applications.
+*	Hosting Static Websites.
+*	Serving Content Distribution Networks (CDNs).
+*	Storing Frequently Accessed Data.
+*	Building Data Lakes and Data Warehouses.
+*	Backing Up Data.
+*	Serving Mobile and Gaming Applications.
 
 Characteristics of  S3 Standard
 
-•	Availability criteria are quite good, like 99.9%.
-•	Improves the recovery of an object file.
-•	It is against the events which are a little bit tough that can affect an entire Availability Zone.
-•	 Durability of S3 standard is 99.999999999%.
+*	Availability criteria are quite good, like 99.9%.
+*	Improves the recovery of an object file.
+*	It is against the events which are a little bit tough that can affect an entire Availability Zone.
+*	 Durability of S3 standard is 99.999999999%.
 
 
 ## 2. S3 Intelligent-Tiering: Automated Cost Optimization for Data with Unknown Access Patterns
@@ -77,10 +77,10 @@ The first cloud storage automatically decreases the user’s storage cost. It pr
 
 Characteristics of  S3 Intelligent-Tiering
 
-•	Required less monitoring and automatically tier charge.
-•	No minimum storage duration and no recovery charges are required to access the service.
-•	Availability criteria are quite good, like 99.9%.
-•	Durability of S3 Intelligent- Tiering is 99.999999999%.
+*	Required less monitoring and automatically tier charge.
+*	No minimum storage duration and no recovery charges are required to access the service.
+*	Availability criteria are quite good, like 99.9%.
+*	Durability of S3 Intelligent- Tiering is 99.999999999%.
 
 
 ## 3.S3 Standard-Infrequent Access: Cost-Effective Storage for Less Frequently Used Data
@@ -89,16 +89,16 @@ To access the less frequently used data, users use S3 Standard-IA. It requires r
 
 To choose which type of data is suitable for the for S3 standard-infrequent access.
 
-•	Access Frequency
-•	Data Size
-•	Access Latency Requirements
-•	Data Durability Requirements
+*	Access Frequency
+*	Data Size
+*	Access Latency Requirements
+*	Data Durability Requirements
 Characteristics of  S3 Standard-Infrequent Access
 
-•	High performance and same action rate.
-•	Very Durable in all AZs.
-•	Availability is 99.9% in S3 Standard-IA.
-•	Durability is 99.999999999%.
+*	High performance and same action rate.
+*	Very Durable in all AZs.
+*	Availability is 99.9% in S3 Standard-IA.
+*	Durability is 99.999999999%.
 
 
 ## 4. S3 Glacier Instant Retrieval: High-Performance Archiving with Rapid Retrieval
@@ -107,10 +107,10 @@ It is an archive storage class that delivers the lowest-cost storage for data ar
 
 Characteristics of S3 Glacier Instant Retrieval
 
-•	It just takes milliseconds to recover the data.
-•	The minimum object size should be 128KB.
-•	Availability is 99.9% in S3 glacier Instant Retrieval.
-•	Durability is 99.999999999%.
+*	It just takes milliseconds to recover the data.
+*	The minimum object size should be 128KB.
+*	Availability is 99.9% in S3 glacier Instant Retrieval.
+*	Durability is 99.999999999%.
 
 
 ## 5. S3 One Zone-Infrequent Access: Cost-Optimized Storage for Single Availability Zone
@@ -118,10 +118,10 @@ Characteristics of S3 Glacier Instant Retrieval
 Different from other S3 Storage Classes which store data in a minimum of three Availability Zones, S3 One Zone-IA stores data in a single Availability Zone and costs 20% less than S3 Standard-IA. It’s a very good choice for storing secondary backup copies of on-premises data or easily re-creatable data. S3 One Zone-IA provides you with the same high durability, high throughput, and low latency as in S3 Standard.
 
 Characteristics of S3 One Zone-Infrequent Access
-•	Supports SSL (Secure Sockets Layer) for data transferring and encryption of data.
-•	Availability Zone destruction can damage the data.
-•	Availability is 99.5% in S3 one Zone- Infrequent Access.
-•	Durability is 99.999999999%.
+*	Supports SSL (Secure Sockets Layer) for data transferring and encryption of data.
+*	Availability Zone destruction can damage the data.
+*	Availability is 99.5% in S3 one Zone- Infrequent Access.
+*	Durability is 99.999999999%.
 
 
 
@@ -132,11 +132,11 @@ It provides low-cost storage compared to S3 Glacier Instant Retrieval. It is a s
 
 Characteristics of S3 Glacier Flexible Retrieval
 
-•	Free recoveries in high quantity.
-•	AZs destruction can lead to difficulty in accessing data.
-•	When you must retrieve large data sets, then S3 glacier flexible retrieval is best for backup and disaster recovery use cases.
-•	Availability is 99.99% in S3 glacier flexible retrieval.
-•	Durability is 99.999999999%.
+*	Free recoveries in high quantity.
+*	AZs destruction can lead to difficulty in accessing data.
+*	When you must retrieve large data sets, then S3 glacier flexible retrieval is best for backup and disaster recovery use cases.
+*	Availability is 99.99% in S3 glacier flexible retrieval.
+*	Durability is 99.999999999%.
 
 
 ## 7. Amazon S3 Glacier Deep Archive
@@ -145,10 +145,10 @@ The Glacier Deep Archive storage class is designed to provide long-lasting and s
 
 Characteristics of S3 Glacier Deep Archive
 
-•	More secured storage.
-•	Recovery time is less requiring less time.
-•	Availability is 99.99% in S3 glacier deep archive.
-•	Durability is 99.999999999%.
+*	More secured storage.
+*	Recovery time is less requiring less time.
+*	Availability is 99.99% in S3 glacier deep archive.
+*	Durability is 99.999999999%.
 # S3 Encryption:
 S3 data can be encrypted both in transit and at rest.
 ## Encryption In Transit:
@@ -156,72 +156,72 @@ When the traffic passing between one endpoint to another is indecipherable. Anyo
 ## Encryption At Rest: 
 When the immobile data sitting inside S3 is encrypted. If someone breaks into a server, they still won’t be able to access encrypted info within that server. Encryption at rest can be done either on the server-side or the client-side. The server-side is when S3 encrypts your data as it is being written to disk and decrypts it when you access it. The client-side is when you personally encrypt the object on your own and then upload it into S3 afterwards.
 You can encrypt on the AWS supported server-side in the following ways:
-•	S3 Managed Keys / SSE - S3 (server-side encryption S3) - when Amazon manages the encryption and decryption keys for you automatically. In this scenario, you concede a little control to Amazon in exchange for ease of use.
-•	AWS Key Management Service / SSE - KMS - when Amazon and you both manage the encryption and decryption keys together.
-•	Server-Side Encryption w/ customer provided keys / SSE - C - when I give Amazon my own keys that I manage. In this scenario, you concede ease of use in exchange for more control.
+*	S3 Managed Keys / SSE - S3 (server-side encryption S3) - when Amazon manages the encryption and decryption keys for you automatically. In this scenario, you concede a little control to Amazon in exchange for ease of use.
+*	AWS Key Management Service / SSE - KMS - when Amazon and you both manage the encryption and decryption keys together.
+*	Server-Side Encryption w/ customer provided keys / SSE - C - when I give Amazon my own keys that I manage. In this scenario, you concede ease of use in exchange for more control.
 # S3 Versioning:
-•	When versioning is enabled, S3 stores all versions of an object including all writes and even deletes.
-•	It is a great feature for implicitly backing up content and for easy rollbacks in case of human error.
-•	It can be thought of as analogous to Git.
-•	Once versioning is enabled on a bucket, it cannot be disabled - only suspended.
-•	Versioning integrates w/ lifecycle rules so you can set rules to expire or migrate data based on their version.
-•	Versioning also has MFA delete capability to provide an additional layer of security.
+*	When versioning is enabled, S3 stores all versions of an object including all writes and even deletes.
+*	It is a great feature for implicitly backing up content and for easy rollbacks in case of human error.
+*	It can be thought of as analogous to Git.
+*	Once versioning is enabled on a bucket, it cannot be disabled - only suspended.
+*	Versioning integrates w/ lifecycle rules so you can set rules to expire or migrate data based on their version.
+*	Versioning also has MFA delete capability to provide an additional layer of security.
 # S3 Lifecycle Management:
-•	Automates the movement of objects between the different storage tiers.
-•	Can be used in conjunction with versioning.
-•	Lifecycle rules can be applied to both current and previous versions of an object.
+*	Automates the movement of objects between the different storage tiers.
+*	Can be used in conjunction with versioning.
+*	Lifecycle rules can be applied to both current and previous versions of an object.
 # S3 Cross Region Replication:
-•	Cross region replication only works if versioning is enabled.
-•	When cross region replication is enabled, no pre-existing data is transferred. Only new uploads into the original bucket are replicated. All subsequent updates are replicated.
-•	When you replicate the contents of one bucket to another, you can change the ownership of the content if you want. You can also change the storage tier of the new bucket with the replicated content.
-•	When files are deleted in the original bucket (via a delete marker as versioning prevents true deletions), those deletes are not replicated.
-•	Cross Region Replication Overview
-•	What is and isn’t replicated such as encrypted objects, deletes, items in glacier, etc.
+*	Cross region replication only works if versioning is enabled.
+*	When cross region replication is enabled, no pre-existing data is transferred. Only new uploads into the original bucket are replicated. All subsequent updates are replicated.
+*	When you replicate the contents of one bucket to another, you can change the ownership of the content if you want. You can also change the storage tier of the new bucket with the replicated content.
+*	When files are deleted in the original bucket (via a delete marker as versioning prevents true deletions), those deletes are not replicated.
+*	Cross Region Replication Overview
+*	What is and isn’t replicated such as encrypted objects, deletes, items in glacier, etc.
 # S3 Transfer Acceleration:
-•	Transfer acceleration makes use of the CloudFront network by sending or receiving data at CDN points of presence (called edge locations) rather than slower uploads or downloads at the origin.
-•	This is accomplished by uploading to a distinct URL for the edge location instead of the bucket itself. This is then transferred over the AWS network backbone at a much faster speed.
-•	You can test transfer acceleration speed directly in comparison to regular uploads.
+*	Transfer acceleration makes use of the CloudFront network by sending or receiving data at CDN points of presence (called edge locations) rather than slower uploads or downloads at the origin.
+*	This is accomplished by uploading to a distinct URL for the edge location instead of the bucket itself. This is then transferred over the AWS network backbone at a much faster speed.
+*	You can test transfer acceleration speed directly in comparison to regular uploads.
 # S3 Event Notifications:
 The Amazon S3 notification feature enables you to receive and send notifications when certain events happen in your bucket. To enable notifications, you must first configure the events you want Amazon S3 to publish (new object added, old object deleted, etc.) and the destinations where you want Amazon S3 to send the event notifications. Amazon S3 supports the following destinations where it can publish events:
-•	Amazon Simple Notification Service (Amazon SNS) - A web service that coordinates and manages the delivery or sending of messages to be subscribing endpoints or clients.
-•	Amazon Simple Queue Service (Amazon SQS) - SQS offers reliable and scalable hosted queues for storing messages as they travel between computers.
-•	AWS Lambda - AWS Lambda is a compute service where you can upload your code and the service can run the code on your behalf using the AWS infrastructure. You package up and upload your custom code to AWS Lambda when you create a Lambda function. The S3 event triggering the Lambda function also can serve as the code's input.
+*	Amazon Simple Notification Service (Amazon SNS) - A web service that coordinates and manages the delivery or sending of messages to be subscribing endpoints or clients.
+*	Amazon Simple Queue Service (Amazon SQS) - SQS offers reliable and scalable hosted queues for storing messages as they travel between computers.
+*	AWS Lambda - AWS Lambda is a compute service where you can upload your code and the service can run the code on your behalf using the AWS infrastructure. You package up and upload your custom code to AWS Lambda when you create a Lambda function. The S3 event triggering the Lambda function also can serve as the code's input.
 # S3 and ElasticSearch:
-•	If you are using S3 to store log files, ElasticSearch provides full search capabilities for logs and can be used to search through data stored in an S3 bucket.
-•	You can integrate your ElasticSearch domain with S3 and Lambda. In this setup, any new logs received by S3 will trigger an event notification to Lambda, which in turn will then run your application code on the new log data. After your code finishes processing, the data will be streamed into your ElasticSearch domain and be available for observation.
+*	If you are using S3 to store log files, ElasticSearch provides full search capabilities for logs and can be used to search through data stored in an S3 bucket.
+*	You can integrate your ElasticSearch domain with S3 and Lambda. In this setup, any new logs received by S3 will trigger an event notification to Lambda, which in turn will then run your application code in the new log data. After your code finishes processing, the data will be streamed into your ElasticSearch domain and be available for observation.
 Maximizing S3 Read/Write Performance:
-•	If the request rate for reading and writing objects to S3 is extremely high, you can use sequential date-based naming for your prefixes to improve performance. Earlier versions of the AWS Docs also suggested using hash keys or random strings to prefix the object's name. In such cases, the partitions used to store the objects will be better distributed and therefore will allow better read/write performance on your objects.
-•	If your S3 data is receiving a high number of GET requests from users, you should consider using Amazon CloudFront for performance optimization. By integrating CloudFront with S3, you can distribute content via CloudFront's cache to your users for lower latency and a higher data transfer rate. This also has the bonus of sending fewer direct requests to S3 which will reduce costs. For example, suppose that you have a few objects that are very popular. CloudFront fetches those objects from S3 and caches them. CloudFront can then serve future requests for the objects from its cache, reducing the total number of GET requests it sends to Amazon S3.
-•	More information on how to ensure high performance in S3
+*	If the request rate for reading and writing objects to S3 is extremely high, you can use sequential date-based naming for your prefixes to improve performance. Earlier versions of the AWS Docs also suggested using hash keys or random strings to prefix the object's name. In such cases, the partitions used to store the objects will be better distributed and therefore will allow better read/write performance on your objects.
+*	If your S3 data is receiving a high number of GET requests from users, you should consider using Amazon CloudFront for performance optimization. By integrating CloudFront with S3, you can distribute content via CloudFront's cache to your users for lower latency and a higher data transfer rate. This also has the bonus of sending fewer direct requests to S3 which will reduce costs. For example, suppose that you have a few objects that are very popular. CloudFront fetches those objects from S3 and caches them. CloudFront can then serve future requests for the objects from its cache, reducing the total number of GET requests it sends to Amazon S3.
+*	More information on how to ensure high performance in S3
 # S3 Server Access Logging:
-•	Server access logging provides detailed records for the requests that are made to a bucket. Server access logs are useful for many applications. For example, access log information can be useful in security and access audits. It can also help you learn about your customer base and better understand your Amazon S3 bill.
-•	By default, logging is disabled. When logging is enabled, logs are saved to a bucket in the same AWS Region as the source bucket.
-•	Each access log record provides details about a single access request, such as the requester, bucket name, request time, request action, response status, and an error code, if relevant.
-•	It works in the following way:
-	S3 periodically collects access log records of the bucket you want to monitor.
-	S3 then consolidates those records into log files.
-	S3 finally uploads the log files to your secondary monitoring bucket as log objects.
+*	Server access logging provides detailed records for the requests that are made to a bucket. Server access logs are useful for many applications. For example, access log information can be useful in security and access audits. It can also help you learn about your customer base and better understand your Amazon S3 bill.
+*	By default, logging is disabled. When logging is enabled, logs are saved to a bucket in the same AWS Region as the source bucket.
+*	Each access log record provides details about a single access request, such as the requester, bucket name, request time, request action, response status, and an error code, if relevant.
+*	It works in the following way:
+*	S3 periodically collects access log records of the bucket you want to monitor.
+*	S3 then consolidates those records into log files.
+*	S3 finally uploads the log files to your secondary monitoring bucket as log objects.
 # S3 Multipart Upload:
-•	Multipart upload allows you to upload a single object as a set of parts. Each part is a contiguous portion of the object's data. You can upload these object parts independently and in any order.
-•	Multipart uploads are recommended for files over 100 MB and is the only way to upload files over 5 GB. It achieves functionality by uploading your data in parallel to boost efficiency.
-•	If transmission of any part fails, you can retransmit that part without affecting other parts. After all parts of your object are uploaded, Amazon S3 assembles these parts and creates the object.
-•	Possible reasons for why you would want to use Multipart upload:
-	Multipart upload delivers the ability to begin an upload before you know the final object size.
-	Multipart upload delivers improved throughput.
-	Multipart upload delivers the ability to pause and resume object uploads.
-	Multipart upload delivers quick recovery from network issues.
-•	You can use an AWS SDK to upload an object in parts. Alternatively, you can perform the same action via AWS CLI.
-•	You can also parallelize downloads from S3 using byte-range fetches. If there's a failure during the download, the failure is localized just to the specific byte range and not the whole object.
+*	Multipart upload allows you to upload a single object as a set of parts. Each part is a contiguous portion of the object's data. You can upload these object parts independently and in any order.
+*	Multipart uploads are recommended for files over 100 MB and is the only way to upload files over 5 GB. It achieves functionality by uploading your data in parallel to boost efficiency.
+*	If transmission of any part fails, you can retransmit that part without affecting other parts. After all parts of your object are uploaded, Amazon S3 assembles these parts and creates the object.
+*	Possible reasons for why you would want to use Multipart upload:
+*	Multipart upload delivers the ability to begin an upload before you know the final object size.
+*	Multipart upload delivers improved throughput.
+*	Multipart upload delivers the ability to pause and resume object uploads.
+*	Multipart upload delivers quick recovery from network issues.
+*	You can use an AWS SDK to upload an object in parts. Alternatively, you can perform the same action via AWS CLI.
+*	You can also parallelize downloads from S3 using byte-range fetches. If there's a failure during the download, the failure is localized just to the specific byte range and not the whole object.
 # S3 pre-signed URLs:
-•	All S3 objects are private by default, however the object owner of a private bucket with private objects can optionally share those objects without having to change the permissions of the bucket to be public.
-•	This is done by creating a pre-signed URL. Using your own security credentials, you can grant time-limited permission to download or view your private S3 objects.
-•	When you create a pre-signed URL for your S3 object, you must do the following:
-	Provide your security credentials.
-	Specify a bucket.
-	Specify an object key.
-	Specify the HTTP method (GET to download the object).
-	Specify the expiration date and time.
-•	The pre-signed URLs are valid only for the specified duration and anyone who receives the pre-signed URL within that duration can then access the object.
+*	All S3 objects are private by default, however the object owner of a private bucket with private objects can optionally share those objects without having to change the permissions of the bucket to be public.
+*	This is done by creating a pre-signed URL. Using your own security credentials, you can grant time-limited permission to download or view your private S3 objects.
+*	When you create a pre-signed URL for your S3 object, you must do the following:
+*	Provide your security credentials.
+*	Specify a bucket.
+*	Specify an object key.
+*	Specify the HTTP method (GET to download the object).
+*	Specify the expiration date and time.
+*	The pre-signed URLs are valid only for the specified duration and anyone who receives the pre-signed URL within that duration can then access the object.
 
 
 
