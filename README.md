@@ -256,8 +256,14 @@ You can observe that all my files which I have uploaded are in the objects secti
 	After enabling the static website hosting, you access your website. By copying the URL that has been on the html file. And open that URL in the new tab then you can see your website is running.
 The below images are screenshots of the website that which I have running on the amazon S3.
  
+![1](https://github.com/Agastya9799/AWS-S3-Website_Hosting/assets/157515904/fa5cf7b7-4830-47b1-bc35-9e2fe73752ab)
 
- 
+![2](https://github.com/Agastya9799/AWS-S3-Website_Hosting/assets/157515904/7afa4f8e-77cf-4874-9c1f-439ecf788363)
+
+![3](https://github.com/Agastya9799/AWS-S3-Website_Hosting/assets/157515904/85afd47f-70fc-4912-a341-34709470697e)
+
+![4](https://github.com/Agastya9799/AWS-S3-Website_Hosting/assets/157515904/e65917ca-7b5c-40be-8b8e-e6a39c56de8f)
+
 
 
 
