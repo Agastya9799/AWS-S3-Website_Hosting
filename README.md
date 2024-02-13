@@ -248,7 +248,7 @@ Amazon S3 enables static website hosting for your bucket. At the bottom of the p
 The Endpoint is the Amazon S3 website endpoint for your bucket. After you finish configuring your bucket as a static website, you can use this endpoint to test your website.
 
 As I mentioned above, our amazon S3 bucket must be publicly accessible to all. You can see in the below picture that my bucket is public.
-
+![thopu](https://github.com/Agastya9799/AWS-S3-Website_Hosting/assets/157515904/eb65c205-8949-4f1e-ac8d-5d334397dd4d)
  
 
 You can observe that all my files which I have uploaded are in the objects section. And if you need to add more files then by clicking on the upload option you can add more files.
